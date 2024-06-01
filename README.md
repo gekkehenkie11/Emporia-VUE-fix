@@ -3,7 +3,7 @@ If you have a 2 phase system and there's a 120 degrees angle between your two ph
 
 Right now it's quick and dirty. I changed it so that the first mux blocks assume 2 phases to the breaker. So this means port:
 
-10, 2, 11, 3, 12, 4, 9, 1
+10, 2, 11, 3, 12, 4, 9, 1. So, rewritten, that's port 1, 2, 3, 4 and 9, 10, 11, 12.
 
 For the other ports it behaves as stock firmware. So I now have 8 ports configured for 2 phase connection and the others should be between phase and neutral. 
 If you want to change this number you can simply change line 618 where it says
