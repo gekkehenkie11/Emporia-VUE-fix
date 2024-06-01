@@ -29,3 +29,5 @@ Then hook up to the H5 port of your VUE: Vtref, GND, SWDIO, SWCLK and nReset. So
 You can just flash with Jlink Commander for example, with command "Loadfile". Don't forget to disconnect all wires when you're done flashing, the reported values will not be correct if even 1 wire is still connected!
 
 Then in the esphome firmware you can just alternate between the 3 phases to find the right one. If you get a negative value, just reverse the clamp.
+
+I've also just uploaded out.bin which is a precompiled version, ready to be flashed.
