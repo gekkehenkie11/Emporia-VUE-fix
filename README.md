@@ -31,3 +31,5 @@ You can just flash with Jlink Commander for example, with command "Loadfile". Do
 Then in the esphome firmware you can just alternate between the 3 phases to find the right one. If you get a negative value, just reverse the clamp.
 
 I've also just uploaded out.bin which is a precompiled version, ready to be flashed.
+
+For more technical information see: https://github.com/emporia-vue-local/esphome/discussions/287
