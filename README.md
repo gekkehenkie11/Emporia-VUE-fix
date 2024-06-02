@@ -3,7 +3,7 @@ If you have a 2 phase system and there's a 120 degrees angle between your two ph
 
 Right now it's quick and dirty. I changed it so that the first mux blocks assume 2 phases to the breaker. So this means port:
 
-10, 2, 11, 3, 12, 4, 9, 1. So, rewritten, that's port 1, 2, 3, 4 and 9, 10, 11, 12. So these ports are nowe reserved for 2 phases.
+10, 2, 11, 3, 12, 4, 9, 1. So, rewritten, that's port 1, 2, 3, 4 and 9, 10, 11, 12. So these ports are now reserved for 2 phases.
 
 For the other ports it behaves as stock firmware, so that's L+N connected. 
 
