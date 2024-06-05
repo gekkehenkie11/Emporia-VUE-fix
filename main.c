@@ -617,9 +617,9 @@ void irq_handler_dmac(void) //We've configured it to enable Channel Transfer Com
 		//Process the RawPV's for the 2 muxed small CT's. For first 4 muxes we're going to assume that they're connected between 2 phases at 120 degrees voltage shift!
 		if (Muxnr < 4)
 		{
-			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][0] -= dif1 * ( (DMAresults[lastindex][0] - averages[0]) - (DMAresults[lastindex][2] - averages[1]) )  ;  //current * volts
-			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][1] -= dif1 * ( (DMAresults[lastindex][0] - averages[0]) - (DMAresults[lastindex][4] - averages[2]) )  ;  //current * volts
-			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][2] -= dif1 * ( (DMAresults[lastindex][2] - averages[1]) - (DMAresults[lastindex][4] - averages[2]) )  ;  //current *volts
+			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][0] -= dif1 * ( (DMAresults[lastindex][0] - averages[0]) - (DMAresults[lastindex][2] - averages[1]) )  ;  //current * (V L1 - V L2)
+			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][1] -= dif1 * ( (DMAresults[lastindex][0] - averages[0]) - (DMAresults[lastindex][4] - averages[2]) )  ;  //current * (V L1 - V L3)
+			calcblock[cbi].RawPVsum[3 + (Muxnr*2) + i][2] -= dif1 * ( (DMAresults[lastindex][2] - averages[1]) - (DMAresults[lastindex][4] - averages[2]) )  ;  //current * (V L2 - V L3)
 		}
 		else
 		for (int x = 0; x < 3; x++)
