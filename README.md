@@ -1,7 +1,8 @@
 WARNING ONLY TESTED ON VUE2 !!!!
 
-If you have a 3 phase system at home and you have hooked up 2 phases to 1 breaker, then you'll need this fix. 
-If you have a 2 phase system and there's a 120 degrees angle between your two phases (so it's not really true two phases) you will also need this. 
+If you have a 3 phase system at home and you have hooked up 2 phases to 1 breaker OR if you have a 2 phase system and there's a 120 degrees 
+angle between your two phases (so it's not really true two phases) you might want to flash this fix. It will allow you
+to use only 1 CT on one of the two legs. 
 
 Right now it's quick and dirty. I changed it so that the first mux blocks assume 2 phases to the breaker. So this means port:
 
