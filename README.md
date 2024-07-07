@@ -1,3 +1,5 @@
+WARNING ONLY TESTED ON VUE2 !!!!
+
 If you have a 3 phase system at home and you have hooked up 2 phases to 1 breaker, then you'll need this fix. 
 If you have a 2 phase system and there's a 120 degrees angle between your two phases (so it's not really true two phases) you will also need this. 
 
