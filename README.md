@@ -35,7 +35,11 @@ To flash, right now you'll need a Jlink adaptor or something compatible. I used 
 Then hook up to the H5 port of your VUE: Vtref, GND, SWDIO, SWCLK and nReset. So that's pin 1, 5, 2, 4 and 10. See: https://www.g3gg0.de/wordpress/wp-content/uploads/2023/06/grafik-2.png
 You can just flash with Jlink Commander for example, with command "Loadfile". Don't forget to disconnect all wires when you're done flashing, the reported values will not be correct if even 1 wire is still connected!
 
-Then in the esphome firmware you can just alternate between the 3 phases to find the right one. If you get a negative value, just reverse the clamp.
+Then in the esphome firmware you can just alternate between the 3 phases to find the right one. Or if you know which 2 phases are connected:
+Phase a = L1 - L2
+Phase b = L1 - L3
+Phase c = L2 - L3
+If you get a negative value, just reverse the clamp.
 
 I've also just uploaded out.bin which is a precompiled version, ready to be flashed.
 
