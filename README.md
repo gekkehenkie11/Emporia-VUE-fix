@@ -44,6 +44,7 @@ Phase c = L2 - L3.
 
 If you get a negative value, just reverse the clamp (or multiply the result with -1)
 
-I've also just uploaded out.bin which is a precompiled version, ready to be flashed.
+I've also just uploaded out.bin which is a precompiled version, ready to be flashed. And I've also just uploaded "out_full_16_ports_220V.bin" which expects 220V on all 16 ports, so 
+in case you want a dedicated VUE for 220V only.
 
 For more technical information see: https://github.com/emporia-vue-local/esphome/discussions/287
