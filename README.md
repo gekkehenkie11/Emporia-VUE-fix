@@ -42,7 +42,7 @@ Phase b = L1 - L3.
 
 Phase c = L2 - L3.
 
-If you get a negative value, just reverse the clamp.
+If you get a negative value, just reverse the clamp (or multiply the result with -1)
 
 I've also just uploaded out.bin which is a precompiled version, ready to be flashed.
 
