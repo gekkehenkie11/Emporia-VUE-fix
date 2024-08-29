@@ -31,7 +31,7 @@ HOW TO COMPILE:
 You'll need the have gcc-arm-none-eabi installed, see here how to do that: https://askubuntu.com/questions/1243252/how-to-install-arm-none-eabi-gdb-on-ubuntu-20-04-lts-focal-fossa
 
 HOW TO FLASH:
-To flash, right now you'll need a Jlink adaptor or something compatible. I used a Jlink EDU myself but there are a lot cheaper adapters that work well too. 
+To flash, right now you'll need a Jlink adaptor or something compatible. I used a Jlink EDU myself but there are a lot cheaper adapters that work well too. Make sure you select ATSAMD09D14A as chip.
 Then hook up to the H5 port of your VUE: Vtref, GND, SWDIO, SWCLK and nReset. So that's pin 1, 5, 2, 4 and 10. See: https://www.g3gg0.de/wordpress/wp-content/uploads/2023/06/grafik-2.png
 You can just flash with Jlink Commander for example, with command "Loadfile". Don't forget to disconnect all wires when you're done flashing, the reported values will not be correct if even 1 wire is still connected!
 
@@ -46,5 +46,6 @@ If you get a negative value, just reverse the clamp (or multiply the result with
 
 I've also just uploaded out.bin which is a precompiled version, ready to be flashed. And I've also just uploaded "out_full_16_ports_220V.bin" which expects 220V on all 16 ports, so 
 in case you want a dedicated VUE 2 phase connections entirely (so each clamp goes to one of the 2 phases of each breaker that's connected to 2 out of 3 phases in your house)
+I've also just uploaded 2 other preflashed bins in case you want only 2 or 4 ports to connect to 2 phases.
 
 For more technical information see: https://github.com/emporia-vue-local/esphome/discussions/287
