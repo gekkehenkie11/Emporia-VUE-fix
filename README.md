@@ -33,7 +33,8 @@ You'll need the have gcc-arm-none-eabi installed, see here how to do that: https
 HOW TO FLASH:
 To flash, right now you'll need a Jlink adaptor or something compatible. I used a Jlink EDU myself but there are a lot cheaper adapters that work well too. Make sure you select ATSAMD09D14A as chip.
 Then hook up to the H5 port of your VUE: Vtref, GND, SWDIO, SWCLK and nReset. So that's pin 1, 5, 2, 4 and 10. See: https://www.g3gg0.de/wordpress/wp-content/uploads/2023/06/grafik-2.png
-You can just flash with Jlink Commander for example, with command "Loadfile". Don't forget to disconnect all wires when you're done flashing, the reported values will not be correct if even 1 wire is still connected!
+You can just flash with Jlink Commander for example, with command "Loadfile" (after of course having issued 'connect' to connect to the chip). 
+Don't forget to disconnect all wires when you're done flashing, the reported values will not be correct if even 1 wire is still connected!
 
 Then in the esphome firmware you can just alternate between the 3 phases to find the right one. Or if you know which 2 phases are connected:
 Phase a (in yaml) = L1 - L2.
