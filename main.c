@@ -532,9 +532,9 @@ void irq_handler_dmac(void) //We've configured it to enable Channel Transfer Com
 	//Now process the ADC results! 
 	
 	//For voltages, 3 main CT amps and the 50A CT's:
-	//1. Sum up all ADC results (we use that to calculate the average when we send the ESP packet)
+	//1. Add up all ADC results (we use that to calculate the average when we send the ESP packet)
 	//2. Difference = Latest ADC result - Average result (from last 0.5 second).
-	//3. Sum up the square of that.
+	//3. Add up the square of that.
 	
 	//We use different ADC result buffers though! For the voltages we use the latest buffer. For the mains currents we use
 	//the ADC results from 2 buffers ago. And for the 50A CT currents we use the ADC results from 4 buffers ago!
