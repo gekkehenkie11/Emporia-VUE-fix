@@ -50,3 +50,5 @@ in case you want a dedicated VUE 2 phase connections entirely (so each clamp goe
 I've also just uploaded 2 other preflashed bins in case you want only 2 or 4 ports to connect to 2 phases.
 
 For more technical information see: https://github.com/emporia-vue-local/esphome/discussions/287
+
+*EDIT* Uploaded some photos for clarification
